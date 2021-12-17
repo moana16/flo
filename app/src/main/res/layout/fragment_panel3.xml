@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/home_background_iv"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:src="@drawable/img_default_4_x_1"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/home_setting_btn_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_main_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"/>
+    <ImageView
+        android:id="@+id/home_ticket_btn_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_main_ticket"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/home_setting_btn_iv"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"/>
+    <ImageView
+        android:id="@+id/home_nugu_btn_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_nugu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/home_ticket_btn_iv"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/home_title_tv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="커피와 함께 부드러운 팝 발라드"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_nugu_btn_iv" />
+
+    <ImageView
+        android:id="@+id/home_play_btn_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/btn_panel_play_large"
+        app:layout_constraintTop_toBottomOf="@id/home_setting_btn_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        />
+    <TextView
+        android:id="@+id/home_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 42곡 2021.08.19"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/home_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        />
+    <ImageView
+        android:id="@+id/home_album_ex1_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/panel3_album_img_ex1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_date_tv"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/home_album_ex1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Say You Won't Let Go"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@id/home_album_ex1_iv"
+        app:layout_constraintTop_toTopOf="@id/home_album_ex1_iv"
+        android:layout_marginStart="12dp"
+
+        />
+    <TextView
+        android:id="@+id/home_album_name1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="James Arthur"
+        android:textSize="13dp"
+
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/home_album_ex1_tv"
+        app:layout_constraintStart_toEndOf="@id/home_album_ex1_iv"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="12dp"/>
+    <ImageView
+        android:id="@+id/panel_album_ex2_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/panel3_album_img_ex2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_album_ex1_iv"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/panel_album_ex2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smile"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@id/panel_album_ex2_iv"
+        app:layout_constraintTop_toTopOf="@id/panel_album_ex2_iv"
+        android:layout_marginStart="12dp"
+        />
+    <TextView
+        android:id="@+id/panel_album_name2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Johnny Stimson"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/panel_album_ex2_tv"
+        app:layout_constraintStart_toEndOf="@id/panel_album_ex2_iv"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
